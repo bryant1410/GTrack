@@ -8,9 +8,11 @@ Pod::Spec.new do |s|
   s.author              = { "Mike Amaral" => "mike.amaral36@gmail.com" }
   s.social_media_url    = "http://twitter.com/MikeAmaral"
   s.platform            = :ios
+  s.ios.deployment_target = "7.1"
   s.source              = { :git => "https://github.com/gemr/GTrack.git", :tag => "v0.9" }
   s.source_files        = "GTrack/Source/GTTracker.{h,m}", "GTrack/Source/GoogleAnalytics/*.h"
   s.vendored_library	= "GTrack/Source/GoogleAnalytics/libGoogleAnalyticsServices.a"
+  s.dependency		"GoogleAnalytics-iOS-SDK"
   s.requires_arc        = true
 
 end
