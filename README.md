@@ -6,14 +6,14 @@
 GTrack is a lightweight Objective-C wrapper around the Google Analytics for iOS SDK with some extra goodies, brought to you by [Gemr](http://www.gemr.com). It's built with simplicity and ease-of-use in mind, and adds some additional features not directly available through Google's SDK.
 
 #Features
----
+
 - **Automatic session management**
 - **Screen view tracking**
 - **Event Tracking**
 - **Timed Events** - Easily track the duration of important events like filling out forms or network requests, to see where users are being bottlenecked in your app.
 
 #Installation
----
+
 
 GTrack assumes you've set up your own Google Analytics Account. If you haven't already, visit [Google Analytics]
 (http://www.google.com/analytics/) to set up your account and get your application Tracking ID, which you will need to set up GTrack. If you desire any further reading for how the Google Analytics for iOS SDK works, take a look at their [Getting Started](https://developers.google.com/analytics/devguides/collection/ios/v3/) page.
@@ -23,7 +23,7 @@ GTrack is available via [CocoaPods](http://cocoapods.org/?q=GTrack) Add the foll
 `pod 'GTrack'`
 
 #Usage
----
+
 
 #1. Setup
 
@@ -165,6 +165,6 @@ Expanding on the above example regarding users filling out an initial sign up fo
 
 
 #License
----
+
 This project is made available under the MIT license. See LICENSE.txt for details.
 
