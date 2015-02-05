@@ -5,7 +5,7 @@
 *.perspectivev3
 *.xcuserstate
 *.xccheckout
-project.xcworkspace/
+*.xcworkspace
 xcuserdata/
 .DS_Store
 
