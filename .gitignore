@@ -8,3 +8,8 @@
 project.xcworkspace/
 xcuserdata/
 .DS_Store
+
+#Pods
+Podfile.lock
+Pods/
+build/
