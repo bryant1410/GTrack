@@ -1,3 +1,7 @@
 language: objective-c
+xcode_workspace: GTrack.xcworkspace
+xcode_scheme: GTrackTests
+xcode_sdk: iphonesimulator
+sudo: false
 script:
-  - xctool -project GTrack.xcodeproj -sdk iphonesimulator -scheme GTrack build
+ - xcodebuild -workspace GTrack.xcworkspace -scheme GTrackTests -sdk iphonesimulator build test
