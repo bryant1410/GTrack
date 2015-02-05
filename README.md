@@ -3,7 +3,7 @@
 
 [![License](https://img.shields.io/cocoapods/l/GTrack.svg)](http://doge.mit-license.org) [![Build Status](https://img.shields.io/travis/gemr/GTrack.svg)](https://travis-ci.org/Gemr/GTrack/) ![Badge w/ Version](https://img.shields.io/cocoapods/v/GTrack.svg)
 
-GTrack is a lightweight Objective-C wrapper around the Google Analytics for iOS SDK with some extra goodies, brought to you by [Gemr](http://www.gemr.com). It's built with simplicity and ease-of-use in mind, and adds some additional features not directly available through Google's SDK.
+GTrack is a lightweight Objective-C wrapper around the Google Analytics for iOS v3 SDK with some extra goodies, brought to you by [Gemr](http://www.gemr.com). It's built with simplicity and ease-of-use in mind, and adds some additional features not directly available through Google's SDK.
 
 #Features
 
