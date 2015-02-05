@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2705DF161A72D51A0006440A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705DF151A72D51A0006440A /* main.m */; };
+		2705DF191A72D51A0006440A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705DF181A72D51A0006440A /* AppDelegate.m */; };
+		2705DF1B1A72D51A0006440A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2705DF1A1A72D51A0006440A /* Images.xcassets */; };
+		2705DF1E1A72D51A0006440A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2705DF1C1A72D51A0006440A /* LaunchScreen.xib */; };
+		2705DF2A1A72D51A0006440A /* GTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705DF291A72D51A0006440A /* GTrackTests.m */; };
+		2705DF381A72D57A0006440A /* GTTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705DF371A72D57A0006440A /* GTTracker.m */; };
+		2705DF451A72D5E80006440A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF441A72D5E80006440A /* CoreData.framework */; };
+		2705DF471A72D5F00006440A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF461A72D5F00006440A /* SystemConfiguration.framework */; };
+		2705DF491A72D5FE0006440A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF481A72D5FE0006440A /* libz.dylib */; };
+		2767C4481A83CFF600F60758 /* DemoAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2767C4471A83CFF600F60758 /* DemoAViewController.m */; };
+		27B82AE21A83F5AC00D87434 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B82AE11A83F59A00D87434 /* libGoogleAnalyticsServices.a */; };
+		27E399961A83DB1F00E4AE00 /* DemoBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E399951A83DB1F00E4AE00 /* DemoBViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2705DF241A72D51A0006440A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2705DF081A72D51A0006440A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2705DF0F1A72D51A0006440A;
+			remoteInfo = GTrack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2705DF101A72D51A0006440A /* GTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2705DF141A72D51A0006440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2705DF151A72D51A0006440A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2705DF171A72D51A0006440A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2705DF181A72D51A0006440A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2705DF1A1A72D51A0006440A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2705DF1D1A72D51A0006440A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2705DF231A72D51A0006440A /* GTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2705DF281A72D51A0006440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2705DF291A72D51A0006440A /* GTrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTrackTests.m; sourceTree = "<group>"; };
+		2705DF361A72D57A0006440A /* GTTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTracker.h; sourceTree = "<group>"; };
+		2705DF371A72D57A0006440A /* GTTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTracker.m; sourceTree = "<group>"; };
+		2705DF441A72D5E80006440A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2705DF461A72D5F00006440A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2705DF481A72D5FE0006440A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2767C4461A83CFF600F60758 /* DemoAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAViewController.h; sourceTree = "<group>"; };
+		2767C4471A83CFF600F60758 /* DemoAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAViewController.m; sourceTree = "<group>"; };
+		27B82AD71A83F59900D87434 /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = GoogleAnalytics/GAI.h; sourceTree = "<group>"; };
+		27B82AD81A83F59900D87434 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = GoogleAnalytics/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		27B82AD91A83F59A00D87434 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = GoogleAnalytics/GAIEcommerceFields.h; sourceTree = "<group>"; };
+		27B82ADA1A83F59A00D87434 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = GoogleAnalytics/GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		27B82ADB1A83F59A00D87434 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = GoogleAnalytics/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		27B82ADC1A83F59A00D87434 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = GoogleAnalytics/GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		27B82ADD1A83F59A00D87434 /* GAIFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = GoogleAnalytics/GAIFields.h; sourceTree = "<group>"; };
+		27B82ADE1A83F59A00D87434 /* GAILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = GoogleAnalytics/GAILogger.h; sourceTree = "<group>"; };
+		27B82ADF1A83F59A00D87434 /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = GoogleAnalytics/GAITrackedViewController.h; sourceTree = "<group>"; };
+		27B82AE01A83F59A00D87434 /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = GoogleAnalytics/GAITracker.h; sourceTree = "<group>"; };
+		27B82AE11A83F59A00D87434 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = GoogleAnalytics/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		27E399941A83DB1F00E4AE00 /* DemoBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBViewController.h; sourceTree = "<group>"; };
+		27E399951A83DB1F00E4AE00 /* DemoBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2705DF0D1A72D51A0006440A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B82AE21A83F5AC00D87434 /* libGoogleAnalyticsServices.a in Frameworks */,
+				2705DF491A72D5FE0006440A /* libz.dylib in Frameworks */,
+				2705DF471A72D5F00006440A /* SystemConfiguration.framework in Frameworks */,
+				2705DF451A72D5E80006440A /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2705DF201A72D51A0006440A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2705DF071A72D51A0006440A = {
+			isa = PBXGroup;
+			children = (
+				2705DF121A72D51A0006440A /* GTrack */,
+			);
+			sourceTree = "<group>";
+		};
+		2705DF111A72D51A0006440A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2705DF101A72D51A0006440A /* GTrack.app */,
+				2705DF231A72D51A0006440A /* GTrackTests.xctest */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		2705DF121A72D51A0006440A /* GTrack */ = {
+			isa = PBXGroup;
+			children = (
+				2705DF331A72D5260006440A /* Source */,
+				2705DF341A72D52B0006440A /* Demo */,
+				2705DF261A72D51A0006440A /* GTrackTests */,
+			);
+			path = GTrack;
+			sourceTree = "<group>";
+		};
+		2705DF131A72D51A0006440A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2705DF141A72D51A0006440A /* Info.plist */,
+				2705DF151A72D51A0006440A /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2705DF261A72D51A0006440A /* GTrackTests */ = {
+			isa = PBXGroup;
+			children = (
+				2705DF291A72D51A0006440A /* GTrackTests.m */,
+				2705DF271A72D51A0006440A /* Supporting Files */,
+			);
+			path = GTrackTests;
+			sourceTree = "<group>";
+		};
+		2705DF271A72D51A0006440A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2705DF281A72D51A0006440A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2705DF331A72D5260006440A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2705DF361A72D57A0006440A /* GTTracker.h */,
+				2705DF371A72D57A0006440A /* GTTracker.m */,
+				27B82AD61A83F56A00D87434 /* GoogleAnalytics */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2705DF341A72D52B0006440A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				2705DF171A72D51A0006440A /* AppDelegate.h */,
+				2705DF181A72D51A0006440A /* AppDelegate.m */,
+				2767C4461A83CFF600F60758 /* DemoAViewController.h */,
+				2767C4471A83CFF600F60758 /* DemoAViewController.m */,
+				27E399941A83DB1F00E4AE00 /* DemoBViewController.h */,
+				27E399951A83DB1F00E4AE00 /* DemoBViewController.m */,
+				2705DF351A72D52F0006440A /* Misc */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		2705DF351A72D52F0006440A /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				2705DF1A1A72D51A0006440A /* Images.xcassets */,
+				2705DF1C1A72D51A0006440A /* LaunchScreen.xib */,
+				2705DF4A1A72D60C0006440A /* Frameworks */,
+				2705DF131A72D51A0006440A /* Supporting Files */,
+				2705DF111A72D51A0006440A /* Products */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		2705DF4A1A72D60C0006440A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2705DF481A72D5FE0006440A /* libz.dylib */,
+				2705DF461A72D5F00006440A /* SystemConfiguration.framework */,
+				2705DF441A72D5E80006440A /* CoreData.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		27B82AD61A83F56A00D87434 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				27B82AD71A83F59900D87434 /* GAI.h */,
+				27B82AD81A83F59900D87434 /* GAIDictionaryBuilder.h */,
+				27B82AD91A83F59A00D87434 /* GAIEcommerceFields.h */,
+				27B82ADA1A83F59A00D87434 /* GAIEcommerceProduct.h */,
+				27B82ADB1A83F59A00D87434 /* GAIEcommerceProductAction.h */,
+				27B82ADC1A83F59A00D87434 /* GAIEcommercePromotion.h */,
+				27B82ADD1A83F59A00D87434 /* GAIFields.h */,
+				27B82ADE1A83F59A00D87434 /* GAILogger.h */,
+				27B82ADF1A83F59A00D87434 /* GAITrackedViewController.h */,
+				27B82AE01A83F59A00D87434 /* GAITracker.h */,
+				27B82AE11A83F59A00D87434 /* libGoogleAnalyticsServices.a */,
+			);
+			name = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2705DF0F1A72D51A0006440A /* GTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2705DF2D1A72D51A0006440A /* Build configuration list for PBXNativeTarget "GTrack" */;
+			buildPhases = (
+				2705DF0C1A72D51A0006440A /* Sources */,
+				2705DF0D1A72D51A0006440A /* Frameworks */,
+				2705DF0E1A72D51A0006440A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTrack;
+			productName = GTrack;
+			productReference = 2705DF101A72D51A0006440A /* GTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2705DF221A72D51A0006440A /* GTrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2705DF301A72D51A0006440A /* Build configuration list for PBXNativeTarget "GTrackTests" */;
+			buildPhases = (
+				2705DF1F1A72D51A0006440A /* Sources */,
+				2705DF201A72D51A0006440A /* Frameworks */,
+				2705DF211A72D51A0006440A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2705DF251A72D51A0006440A /* PBXTargetDependency */,
+			);
+			name = GTrackTests;
+			productName = GTrackTests;
+			productReference = 2705DF231A72D51A0006440A /* GTrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2705DF081A72D51A0006440A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Michael Amaral";
+				TargetAttributes = {
+					2705DF0F1A72D51A0006440A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					2705DF221A72D51A0006440A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 2705DF0F1A72D51A0006440A;
+					};
+				};
+			};
+			buildConfigurationList = 2705DF0B1A72D51A0006440A /* Build configuration list for PBXProject "GTrack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2705DF071A72D51A0006440A;
+			productRefGroup = 2705DF111A72D51A0006440A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2705DF0F1A72D51A0006440A /* GTrack */,
+				2705DF221A72D51A0006440A /* GTrackTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2705DF0E1A72D51A0006440A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2705DF1E1A72D51A0006440A /* LaunchScreen.xib in Resources */,
+				2705DF1B1A72D51A0006440A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2705DF211A72D51A0006440A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2705DF0C1A72D51A0006440A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E399961A83DB1F00E4AE00 /* DemoBViewController.m in Sources */,
+				2705DF381A72D57A0006440A /* GTTracker.m in Sources */,
+				2767C4481A83CFF600F60758 /* DemoAViewController.m in Sources */,
+				2705DF191A72D51A0006440A /* AppDelegate.m in Sources */,
+				2705DF161A72D51A0006440A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2705DF1F1A72D51A0006440A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2705DF2A1A72D51A0006440A /* GTrackTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2705DF251A72D51A0006440A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2705DF0F1A72D51A0006440A /* GTrack */;
+			targetProxy = 2705DF241A72D51A0006440A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2705DF1C1A72D51A0006440A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2705DF1D1A72D51A0006440A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2705DF2B1A72D51A0006440A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2705DF2C1A72D51A0006440A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2705DF2E1A72D51A0006440A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "GTrack/Demo/Misc/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GTrack/Source/GoogleAnalytics",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2705DF2F1A72D51A0006440A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "GTrack/Demo/Misc/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GTrack/Source/GoogleAnalytics",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2705DF311A72D51A0006440A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GTrack/GTrackTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTrack.app/GTrack";
+			};
+			name = Debug;
+		};
+		2705DF321A72D51A0006440A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GTrack/GTrackTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTrack.app/GTrack";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2705DF0B1A72D51A0006440A /* Build configuration list for PBXProject "GTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2705DF2B1A72D51A0006440A /* Debug */,
+				2705DF2C1A72D51A0006440A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2705DF2D1A72D51A0006440A /* Build configuration list for PBXNativeTarget "GTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2705DF2E1A72D51A0006440A /* Debug */,
+				2705DF2F1A72D51A0006440A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2705DF301A72D51A0006440A /* Build configuration list for PBXNativeTarget "GTrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2705DF311A72D51A0006440A /* Debug */,
+				2705DF321A72D51A0006440A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2705DF081A72D51A0006440A /* Project object */;
+}

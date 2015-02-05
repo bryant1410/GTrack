@@ -1,0 +1,3 @@
+language: objective-c
+script:
+  - xctool -project GTrack.xcodeproj -sdk iphonesimulator -scheme GTrack build
