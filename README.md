@@ -27,7 +27,7 @@ GTrack is available via [CocoaPods](http://cocoapods.org/?q=GTrack) Add the foll
 
 #1. Setup
 
-In the `application:didFinishLaunchingWithOptions:` of your `AppDelegate.m` file, initialize the `GTTracker` singleton with your Google Analytics Tracking ID and your desired `GAILogLevel`.
+Import `<GTTracker.h>` in your `AppDelegate.m` file, and in `application:didFinishLaunchingWithOptions:` initialize the `GTTracker` singleton with your Google Analytics Tracking ID and your `GAILogLevel`.
 
 ```objective-c
 GTTracker *tracker = [GTTracker sharedInstance];
