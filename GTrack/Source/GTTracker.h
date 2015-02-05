@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GAI.h"
-#import "GAIFields.h"
-#import "GAIDictionaryBuilder.h"
-#import "GAITracker.h"
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
+#import <GoogleAnalytics-iOS-SDK/GAIFields.h>
+#import <GoogleAnalytics-iOS-SDK/GAIDictionaryBuilder.h>
+#import <GoogleAnalytics-iOS-SDK/GAITracker.h>
 
 /**
  * GTTracker is a wrapper around the Google Analytics SDK for iOS, providing automatic session management and quick-and-easy screen and event tracking.

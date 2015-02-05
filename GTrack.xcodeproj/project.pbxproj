@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270171861A8431BA00A87990 /* GTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 270171851A8431BA00A87990 /* GTrackTests.m */; };
 		2705DF161A72D51A0006440A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705DF151A72D51A0006440A /* main.m */; };
 		2705DF191A72D51A0006440A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705DF181A72D51A0006440A /* AppDelegate.m */; };
 		2705DF1B1A72D51A0006440A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2705DF1A1A72D51A0006440A /* Images.xcassets */; };
 		2705DF1E1A72D51A0006440A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2705DF1C1A72D51A0006440A /* LaunchScreen.xib */; };
-		2705DF2A1A72D51A0006440A /* GTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705DF291A72D51A0006440A /* GTrackTests.m */; };
 		2705DF381A72D57A0006440A /* GTTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705DF371A72D57A0006440A /* GTTracker.m */; };
 		2705DF451A72D5E80006440A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF441A72D5E80006440A /* CoreData.framework */; };
 		2705DF471A72D5F00006440A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF461A72D5F00006440A /* SystemConfiguration.framework */; };
 		2705DF491A72D5FE0006440A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF481A72D5FE0006440A /* libz.dylib */; };
 		2767C4481A83CFF600F60758 /* DemoAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2767C4471A83CFF600F60758 /* DemoAViewController.m */; };
-		27B82AE21A83F5AC00D87434 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B82AE11A83F59A00D87434 /* libGoogleAnalyticsServices.a */; };
 		27E399961A83DB1F00E4AE00 /* DemoBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E399951A83DB1F00E4AE00 /* DemoBViewController.m */; };
+		3F5325F9F29417FDBD64DE19 /* libPods-GTrack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B09509D88E6FDDEC78431 /* libPods-GTrack.a */; };
+		72F40588D0527C1F65753919 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97ED126007842D88E8CD071E /* libPods.a */; };
+		F059DA02FC4F3302AAC14191 /* libPods-GTrackTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A3BC2E4092FA749D6B98D8 /* libPods-GTrackTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14AC10F94A170D1C74553761 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		174BD0F0A4BD6957F84C4C08 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		270171851A8431BA00A87990 /* GTrackTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTrackTests.m; sourceTree = "<group>"; };
 		2705DF101A72D51A0006440A /* GTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2705DF141A72D51A0006440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2705DF151A72D51A0006440A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,7 +46,6 @@
 		2705DF1D1A72D51A0006440A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2705DF231A72D51A0006440A /* GTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2705DF281A72D51A0006440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2705DF291A72D51A0006440A /* GTrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTrackTests.m; sourceTree = "<group>"; };
 		2705DF361A72D57A0006440A /* GTTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTracker.h; sourceTree = "<group>"; };
 		2705DF371A72D57A0006440A /* GTTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTracker.m; sourceTree = "<group>"; };
 		2705DF441A72D5E80006440A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -49,19 +53,13 @@
 		2705DF481A72D5FE0006440A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2767C4461A83CFF600F60758 /* DemoAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAViewController.h; sourceTree = "<group>"; };
 		2767C4471A83CFF600F60758 /* DemoAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAViewController.m; sourceTree = "<group>"; };
-		27B82AD71A83F59900D87434 /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = GoogleAnalytics/GAI.h; sourceTree = "<group>"; };
-		27B82AD81A83F59900D87434 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = GoogleAnalytics/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		27B82AD91A83F59A00D87434 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = GoogleAnalytics/GAIEcommerceFields.h; sourceTree = "<group>"; };
-		27B82ADA1A83F59A00D87434 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = GoogleAnalytics/GAIEcommerceProduct.h; sourceTree = "<group>"; };
-		27B82ADB1A83F59A00D87434 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = GoogleAnalytics/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
-		27B82ADC1A83F59A00D87434 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = GoogleAnalytics/GAIEcommercePromotion.h; sourceTree = "<group>"; };
-		27B82ADD1A83F59A00D87434 /* GAIFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = GoogleAnalytics/GAIFields.h; sourceTree = "<group>"; };
-		27B82ADE1A83F59A00D87434 /* GAILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = GoogleAnalytics/GAILogger.h; sourceTree = "<group>"; };
-		27B82ADF1A83F59A00D87434 /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = GoogleAnalytics/GAITrackedViewController.h; sourceTree = "<group>"; };
-		27B82AE01A83F59A00D87434 /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = GoogleAnalytics/GAITracker.h; sourceTree = "<group>"; };
-		27B82AE11A83F59A00D87434 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = GoogleAnalytics/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		27E399941A83DB1F00E4AE00 /* DemoBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBViewController.h; sourceTree = "<group>"; };
 		27E399951A83DB1F00E4AE00 /* DemoBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBViewController.m; sourceTree = "<group>"; };
+		3272844E59EAEA2B01B04E5E /* Pods-GTrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTrackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GTrackTests/Pods-GTrackTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D16E6D1B8EB05B045A57F72 /* Pods-GTrackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTrackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GTrackTests/Pods-GTrackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97ED126007842D88E8CD071E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13B09509D88E6FDDEC78431 /* libPods-GTrack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GTrack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A3BC2E4092FA749D6B98D8 /* libPods-GTrackTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GTrackTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +67,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B82AE21A83F5AC00D87434 /* libGoogleAnalyticsServices.a in Frameworks */,
 				2705DF491A72D5FE0006440A /* libz.dylib in Frameworks */,
 				2705DF471A72D5F00006440A /* SystemConfiguration.framework in Frameworks */,
 				2705DF451A72D5E80006440A /* CoreData.framework in Frameworks */,
+				72F40588D0527C1F65753919 /* libPods.a in Frameworks */,
+				3F5325F9F29417FDBD64DE19 /* libPods-GTrack.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F059DA02FC4F3302AAC14191 /* libPods-GTrackTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				2705DF121A72D51A0006440A /* GTrack */,
+				29543EAAD5FF4F5A33499351 /* Pods */,
+				4955CDC29C3BAB19A681856D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,7 +126,7 @@
 		2705DF261A72D51A0006440A /* GTrackTests */ = {
 			isa = PBXGroup;
 			children = (
-				2705DF291A72D51A0006440A /* GTrackTests.m */,
+				270171851A8431BA00A87990 /* GTrackTests.m */,
 				2705DF271A72D51A0006440A /* Supporting Files */,
 			);
 			path = GTrackTests;
@@ -143,7 +145,6 @@
 			children = (
 				2705DF361A72D57A0006440A /* GTTracker.h */,
 				2705DF371A72D57A0006440A /* GTTracker.m */,
-				27B82AD61A83F56A00D87434 /* GoogleAnalytics */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -184,22 +185,25 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		27B82AD61A83F56A00D87434 /* GoogleAnalytics */ = {
+		29543EAAD5FF4F5A33499351 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				27B82AD71A83F59900D87434 /* GAI.h */,
-				27B82AD81A83F59900D87434 /* GAIDictionaryBuilder.h */,
-				27B82AD91A83F59A00D87434 /* GAIEcommerceFields.h */,
-				27B82ADA1A83F59A00D87434 /* GAIEcommerceProduct.h */,
-				27B82ADB1A83F59A00D87434 /* GAIEcommerceProductAction.h */,
-				27B82ADC1A83F59A00D87434 /* GAIEcommercePromotion.h */,
-				27B82ADD1A83F59A00D87434 /* GAIFields.h */,
-				27B82ADE1A83F59A00D87434 /* GAILogger.h */,
-				27B82ADF1A83F59A00D87434 /* GAITrackedViewController.h */,
-				27B82AE01A83F59A00D87434 /* GAITracker.h */,
-				27B82AE11A83F59A00D87434 /* libGoogleAnalyticsServices.a */,
+				14AC10F94A170D1C74553761 /* Pods.debug.xcconfig */,
+				174BD0F0A4BD6957F84C4C08 /* Pods.release.xcconfig */,
+				7D16E6D1B8EB05B045A57F72 /* Pods-GTrackTests.debug.xcconfig */,
+				3272844E59EAEA2B01B04E5E /* Pods-GTrackTests.release.xcconfig */,
 			);
-			name = GoogleAnalytics;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4955CDC29C3BAB19A681856D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97ED126007842D88E8CD071E /* libPods.a */,
+				F5A3BC2E4092FA749D6B98D8 /* libPods-GTrackTests.a */,
+				A13B09509D88E6FDDEC78431 /* libPods-GTrack.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2705DF2D1A72D51A0006440A /* Build configuration list for PBXNativeTarget "GTrack" */;
 			buildPhases = (
+				75E37F2A2717077B2370A453 /* Check Pods Manifest.lock */,
 				2705DF0C1A72D51A0006440A /* Sources */,
 				2705DF0D1A72D51A0006440A /* Frameworks */,
 				2705DF0E1A72D51A0006440A /* Resources */,
+				3A0BF478AB29904DF918BAB3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2705DF301A72D51A0006440A /* Build configuration list for PBXNativeTarget "GTrackTests" */;
 			buildPhases = (
+				9F134ECF880ED80134116E08 /* Check Pods Manifest.lock */,
 				2705DF1F1A72D51A0006440A /* Sources */,
 				2705DF201A72D51A0006440A /* Frameworks */,
 				2705DF211A72D51A0006440A /* Resources */,
+				C211D6FBA2590467914CA9A5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,6 +304,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A0BF478AB29904DF918BAB3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75E37F2A2717077B2370A453 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F134ECF880ED80134116E08 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C211D6FBA2590467914CA9A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GTrackTests/Pods-GTrackTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2705DF0C1A72D51A0006440A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -313,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2705DF2A1A72D51A0006440A /* GTrackTests.m in Sources */,
+				270171861A8431BA00A87990 /* GTrackTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,36 +491,33 @@
 		};
 		2705DF2E1A72D51A0006440A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AC10F94A170D1C74553761 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "GTrack/Demo/Misc/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/GTrack/Source/GoogleAnalytics",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		2705DF2F1A72D51A0006440A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174BD0F0A4BD6957F84C4C08 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "GTrack/Demo/Misc/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/GTrack/Source/GoogleAnalytics",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		2705DF311A72D51A0006440A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D16E6D1B8EB05B045A57F72 /* Pods-GTrackTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -469,6 +537,7 @@
 		};
 		2705DF321A72D51A0006440A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3272844E59EAEA2B01B04E5E /* Pods-GTrackTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

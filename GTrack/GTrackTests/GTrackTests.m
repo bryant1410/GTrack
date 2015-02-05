@@ -1,8 +1,8 @@
 //
 //  GTrackTests.m
-//  GTrackTests
+//  GTrack
 //
-//  Created by Michael Amaral on 1/23/15.
+//  Created by Michael Amaral on 2/5/15.
 //  Copyright (c) 2015 Michael Amaral. All rights reserved.
 //
 
@@ -96,7 +96,7 @@ NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
         NSString *randomCategory = [self randomStringWithLength:5];
         NSString *randomAction = [self randomStringWithLength:5];
         NSString *randomLabel = [self randomStringWithLength:5];
-
+        
         GTTimedEvent *timedEvent = [GTTimedEvent eventStartingNowWithCategory:randomCategory action:randomAction label:randomLabel];
         [timedEvent endAndSendWithIntervalUnit:IntervalUnitSeconds];
         
