@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.social_media_url    = "http://twitter.com/MikeAmaral"
   s.platform            = :ios
   s.source              = { :git => "https://github.com/gemr/GTrack.git", :tag => "v0.9" }
-  s.source_files        = "GTrack/Source/GTTracker.{h,m}", "GTrack/Source/GoogleAnalytics/*.h", "GTrack/Source/GoogleAnalytics/libGoogleAnalyticsServices.a"
+  s.source_files        = "GTrack/Source/GTTracker.{h,m}", "GTrack/Source/GoogleAnalytics/*.h"
+  s.vendored_library	= "GTrack/Source/GoogleAnalytics/libGoogleAnalyticsServices.a"
   s.requires_arc        = true
 
 end
