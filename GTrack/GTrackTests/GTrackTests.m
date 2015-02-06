@@ -19,21 +19,14 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
 
 @end
 
-@implementation GTrackTests {
-    GTTracker *_tracker;
-}
+@implementation GTrackTests
 
 - (void)setUp {
     [super setUp];
-    
-    _tracker = [GTTracker sharedInstance];
-    [_tracker initializeAnalyticsWithTrackingID:nil logLevel:kGAILogLevelNone];
 }
 
 - (void)tearDown {
     [super tearDown];
-    
-    _tracker = nil;
 }
 
 - (void)testIntervalPropertiesSet {
@@ -98,7 +91,7 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
         NSString *randomLabel = [self randomStringWithLength:5];
         
         GTTimedEvent *timedEvent = [GTTimedEvent eventStartingNowWithCategory:randomCategory action:randomAction label:randomLabel];
-        [timedEvent endAndSendWithIntervalUnit:IntervalUnitSeconds];
+        [timedEvent.eventInterval end];
         
         XCTAssertNotNil(timedEvent);
         XCTAssert([randomCategory isEqualToString:timedEvent.category]);
