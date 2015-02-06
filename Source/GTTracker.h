@@ -31,6 +31,12 @@
 
 
 /**
+ * Whether or not the Google Analytics session is active. This is primarily used for testing purposes.
+ */
+@property (nonatomic, readonly) BOOL isSessionActive;
+
+
+/**
  * Creates or returns the shared GTTracker singleton.
 */
 + (instancetype)sharedInstance;

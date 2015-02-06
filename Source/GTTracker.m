@@ -70,6 +70,8 @@ static NSString * kAnalyticsEndSessionKey = @"end";
     
     id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
     [tracker set:kGAISessionControl value:kAnalyticsStartSessionKey];
+    
+    _isSessionActive = YES;
 }
 
 - (void)endAnalyticsSession {
@@ -83,6 +85,8 @@ static NSString * kAnalyticsEndSessionKey = @"end";
     
     id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
     [tracker set:kGAISessionControl value:kAnalyticsEndSessionKey];
+    
+    _isSessionActive = NO;
 }
 
 
