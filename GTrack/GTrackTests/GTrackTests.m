@@ -13,7 +13,7 @@
 #define ARC4RANDOM_MAX 0x100000000
 #define TEST_ITERATIONS 100
 
-NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXZY0123456789";
+static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXZY0123456789";
 
 @interface GTrackTests : XCTestCase
 
