@@ -45,8 +45,6 @@
 		2705DF1D1A72D51A0006440A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2705DF231A72D51A0006440A /* GTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2705DF281A72D51A0006440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2705DF361A72D57A0006440A /* GTTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTracker.h; sourceTree = "<group>"; };
-		2705DF371A72D57A0006440A /* GTTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTracker.m; sourceTree = "<group>"; };
 		2705DF441A72D5E80006440A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2705DF461A72D5F00006440A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2705DF481A72D5FE0006440A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -106,7 +104,6 @@
 		2705DF121A72D51A0006440A /* GTrack */ = {
 			isa = PBXGroup;
 			children = (
-				2705DF331A72D5260006440A /* Source */,
 				2705DF341A72D52B0006440A /* Demo */,
 				2705DF261A72D51A0006440A /* GTrackTests */,
 			);
@@ -137,15 +134,6 @@
 				2705DF281A72D51A0006440A /* Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2705DF331A72D5260006440A /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				2705DF361A72D57A0006440A /* GTTracker.h */,
-				2705DF371A72D57A0006440A /* GTTracker.m */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		2705DF341A72D52B0006440A /* Demo */ = {
