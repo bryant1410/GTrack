@@ -26,7 +26,6 @@ static NSString * const YOUR_TRACKING_ID = @"UA-59392956-1";
     GTTracker *tracker = [GTTracker sharedInstance];
     [tracker initializeAnalyticsWithTrackingID:YOUR_TRACKING_ID logLevel:kGAILogLevelInfo];
     [tracker setLoggingEnabled:YES];
-    [tracker setAutomaticSessionManagementEnabled:NO];
     
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[DemoAViewController new]];
     
