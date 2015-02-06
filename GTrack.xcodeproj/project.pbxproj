@@ -12,7 +12,6 @@
 		2705DF191A72D51A0006440A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705DF181A72D51A0006440A /* AppDelegate.m */; };
 		2705DF1B1A72D51A0006440A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2705DF1A1A72D51A0006440A /* Images.xcassets */; };
 		2705DF1E1A72D51A0006440A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2705DF1C1A72D51A0006440A /* LaunchScreen.xib */; };
-		2705DF381A72D57A0006440A /* GTTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705DF371A72D57A0006440A /* GTTracker.m */; };
 		2705DF451A72D5E80006440A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF441A72D5E80006440A /* CoreData.framework */; };
 		2705DF471A72D5F00006440A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF461A72D5F00006440A /* SystemConfiguration.framework */; };
 		2705DF491A72D5FE0006440A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF481A72D5FE0006440A /* libz.dylib */; };
@@ -373,7 +372,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27E399961A83DB1F00E4AE00 /* DemoBViewController.m in Sources */,
-				2705DF381A72D57A0006440A /* GTTracker.m in Sources */,
 				2767C4481A83CFF600F60758 /* DemoAViewController.m in Sources */,
 				2705DF191A72D51A0006440A /* AppDelegate.m in Sources */,
 				2705DF161A72D51A0006440A /* main.m in Sources */,
