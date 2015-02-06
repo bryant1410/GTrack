@@ -86,7 +86,8 @@
 		2705DF071A72D51A0006440A = {
 			isa = PBXGroup;
 			children = (
-				2705DF121A72D51A0006440A /* GTrack */,
+				2705DF341A72D52B0006440A /* Demo */,
+				2705DF261A72D51A0006440A /* GTrackTests */,
 				29543EAAD5FF4F5A33499351 /* Pods */,
 				4955CDC29C3BAB19A681856D /* Frameworks */,
 			);
@@ -99,15 +100,6 @@
 				2705DF231A72D51A0006440A /* GTrackTests.xctest */,
 			);
 			path = Products;
-			sourceTree = "<group>";
-		};
-		2705DF121A72D51A0006440A /* GTrack */ = {
-			isa = PBXGroup;
-			children = (
-				2705DF341A72D52B0006440A /* Demo */,
-				2705DF261A72D51A0006440A /* GTrackTests */,
-			);
-			path = GTrack;
 			sourceTree = "<group>";
 		};
 		2705DF131A72D51A0006440A /* Supporting Files */ = {
@@ -125,7 +117,8 @@
 				270171851A8431BA00A87990 /* GTrackTests.m */,
 				2705DF271A72D51A0006440A /* Supporting Files */,
 			);
-			path = GTrackTests;
+			name = GTrackTests;
+			path = GTrack/GTrackTests;
 			sourceTree = "<group>";
 		};
 		2705DF271A72D51A0006440A /* Supporting Files */ = {
@@ -147,7 +140,8 @@
 				27E399951A83DB1F00E4AE00 /* DemoBViewController.m */,
 				2705DF351A72D52F0006440A /* Misc */,
 			);
-			path = Demo;
+			name = Demo;
+			path = GTrack/Demo;
 			sourceTree = "<group>";
 		};
 		2705DF351A72D52F0006440A /* Misc */ = {
