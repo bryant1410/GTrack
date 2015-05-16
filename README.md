@@ -3,7 +3,7 @@
 
 [![License](https://img.shields.io/cocoapods/l/GTrack.svg)](http://doge.mit-license.org) [![Build Status](https://img.shields.io/travis/gemr/GTrack.svg)](https://travis-ci.org/gemr/GTrack/) ![Badge w/ Version](https://img.shields.io/cocoapods/v/GTrack.svg)
 
-GTrack is a lightweight Objective-C wrapper around the Google Analytics for iOS v3 SDK with some extra goodies, brought to you by [Gemr](http://www.gemr.com). It's built with simplicity and ease-of-use in mind, and adds some additional features not directly available through Google's SDK.
+GTrack is a lightweight Objective-C wrapper around the Google Analytics for iOS v3 SDK with some extra goodies, brought to you by [Gemr](https://gemr.com/?utm_source=github&utm_medium=open_source&utm_campaign=gtrack). It's built with simplicity and ease-of-use in mind, and adds some additional features not directly available through Google's SDK.
 
 #Features
 
@@ -156,7 +156,7 @@ Expanding on the above example regarding users filling out an initial sign up fo
 ```
 
 ---
-[<img src="Screenshots/gemr_logo.png">](http://www.gemr.com)
+[<img src="Screenshots/gemr_logo.png">](https://gemr.com/?utm_source=github&utm_medium=open_source&utm_campaign=gtrack)
 
 ###Gemr is a social community for collectors where you can discover, share, buy, sell, trade, and show-off your collectibles and other unique items. We want to connect you with like-minded people who share your passions.
 
