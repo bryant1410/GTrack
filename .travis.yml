@@ -1,7 +1,9 @@
 language: objective-c
+before_install: gem install cocoapods xcpretty obcd slather -N
 xcode_workspace: GTrack.xcworkspace
 xcode_scheme: GTrackTests
 xcode_sdk: iphonesimulator
 sudo: false
 script:
  - xcodebuild -workspace GTrack.xcworkspace -scheme GTrackTests -sdk iphonesimulator build test
+after_success: slather
