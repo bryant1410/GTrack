@@ -1,5 +1,5 @@
-pod 'GTrack', :git => 'https://www.github.com/gemr/GTrack.git'
+pod 'GTrack'
 
 target "GTrackTests" do
-   pod 'GTrack', :git => 'https://www.github.com/gemr/GTrack.git'
+    pod 'GTrack'
 end
