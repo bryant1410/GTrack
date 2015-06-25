@@ -31,6 +31,9 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
     [super tearDown];
 }
 
+
+#pragma mark - GTTracker
+
 - (void)testStartAndEndAnalyticsSession {
     GTTracker *tracker = [GTTracker sharedInstance];
     [tracker startAnalyticsSession];
@@ -41,6 +44,9 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
 
     XCTAssertFalse(tracker.isSessionActive);
 }
+
+
+#pragma mark - GTInterval
 
 - (void)testIntervalPropertiesSet {
     for (NSInteger i = 0; i < TEST_ITERATIONS; i++) {
@@ -96,6 +102,9 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
         XCTAssertEqualWithAccuracy(calculatedHours, hoursInFuture, .1);
     }
 }
+
+
+#pragma mark - GTTimedEvent
 
 - (void)testTimedEvents {
     for (NSInteger i = 0; i < TEST_ITERATIONS; i++) {
