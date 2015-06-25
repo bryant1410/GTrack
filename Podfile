@@ -1,5 +1,5 @@
-pod 'GTrack'
+pod 'GoogleAnalytics'
 
 target "GTrackTests" do
-    pod 'GTrack'
+    pod 'GoogleAnalytics'
 end

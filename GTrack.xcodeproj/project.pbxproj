@@ -16,8 +16,8 @@
 		2705DF471A72D5F00006440A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF461A72D5F00006440A /* SystemConfiguration.framework */; };
 		2705DF491A72D5FE0006440A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2705DF481A72D5FE0006440A /* libz.dylib */; };
 		2767C4481A83CFF600F60758 /* DemoAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2767C4471A83CFF600F60758 /* DemoAViewController.m */; };
+		27C67C381B3C54ED00284293 /* GTTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C67C371B3C54ED00284293 /* GTTracker.m */; };
 		27E399961A83DB1F00E4AE00 /* DemoBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E399951A83DB1F00E4AE00 /* DemoBViewController.m */; };
-		3F5325F9F29417FDBD64DE19 /* libPods-GTrack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B09509D88E6FDDEC78431 /* libPods-GTrack.a */; };
 		72F40588D0527C1F65753919 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97ED126007842D88E8CD071E /* libPods.a */; };
 		F059DA02FC4F3302AAC14191 /* libPods-GTrackTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A3BC2E4092FA749D6B98D8 /* libPods-GTrackTests.a */; };
 /* End PBXBuildFile section */
@@ -50,6 +50,8 @@
 		2705DF481A72D5FE0006440A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2767C4461A83CFF600F60758 /* DemoAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAViewController.h; sourceTree = "<group>"; };
 		2767C4471A83CFF600F60758 /* DemoAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAViewController.m; sourceTree = "<group>"; };
+		27C67C361B3C54ED00284293 /* GTTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTTracker.h; path = Source/GTTracker.h; sourceTree = "<group>"; };
+		27C67C371B3C54ED00284293 /* GTTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTTracker.m; path = Source/GTTracker.m; sourceTree = "<group>"; };
 		27E399941A83DB1F00E4AE00 /* DemoBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBViewController.h; sourceTree = "<group>"; };
 		27E399951A83DB1F00E4AE00 /* DemoBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBViewController.m; sourceTree = "<group>"; };
 		3272844E59EAEA2B01B04E5E /* Pods-GTrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTrackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GTrackTests/Pods-GTrackTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 				2705DF471A72D5F00006440A /* SystemConfiguration.framework in Frameworks */,
 				2705DF451A72D5E80006440A /* CoreData.framework in Frameworks */,
 				72F40588D0527C1F65753919 /* libPods.a in Frameworks */,
-				3F5325F9F29417FDBD64DE19 /* libPods-GTrack.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +87,7 @@
 		2705DF071A72D51A0006440A = {
 			isa = PBXGroup;
 			children = (
+				27C67C351B3C54E300284293 /* Source */,
 				2705DF341A72D52B0006440A /* Demo */,
 				2705DF261A72D51A0006440A /* GTrackTests */,
 				29543EAAD5FF4F5A33499351 /* Pods */,
@@ -164,6 +166,15 @@
 				2705DF441A72D5E80006440A /* CoreData.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		27C67C351B3C54E300284293 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				27C67C361B3C54ED00284293 /* GTTracker.h */,
+				27C67C371B3C54ED00284293 /* GTTracker.m */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 		29543EAAD5FF4F5A33499351 /* Pods */ = {
@@ -357,6 +368,7 @@
 				2767C4481A83CFF600F60758 /* DemoAViewController.m in Sources */,
 				2705DF191A72D51A0006440A /* AppDelegate.m in Sources */,
 				2705DF161A72D51A0006440A /* main.m in Sources */,
+				27C67C381B3C54ED00284293 /* GTTracker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
