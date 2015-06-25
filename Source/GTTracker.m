@@ -28,11 +28,7 @@ static NSString * kAnalyticsEndSessionKey = @"end";
 
 - (instancetype)init {
     self = [super init];
-    
-    if (!self) {
-        return nil;
-    }
-    
+
     self.automaticSessionManagementEnabled = YES;
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleAppActive) name:UIApplicationDidBecomeActiveNotification object:nil];
@@ -146,10 +142,6 @@ static NSString * kAnalyticsEndSessionKey = @"end";
 
 - (instancetype)initWithCategory:(NSString *)category action:(NSString *)action label:(NSString *)label {
     self = [super init];
-    
-    if (!self) {
-        return nil;
-    }
     
     self.category = category;
     self.action = action;
