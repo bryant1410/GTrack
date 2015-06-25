@@ -94,6 +94,12 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
  blow up.
 */
 
+- (void)testScreenEvent {
+    [_tracker sendScreenEventWithTitle:nil];
+    [_tracker sendScreenEventWithTitle:@""];
+    [_tracker sendScreenEventWithTitle:@"Test Title"];
+}
+
 - (void)testEventWithCategory {
     [_tracker sendAnalyticsEventWithCategory:nil];
     [_tracker sendAnalyticsEventWithCategory:@""];
