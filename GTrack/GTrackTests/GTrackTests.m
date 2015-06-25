@@ -50,7 +50,34 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
     XCTAssertFalse(_tracker.isSessionActive);
 }
 
-    XCTAssertFalse(tracker.isSessionActive);
+/*
+ We can't really test the results of the analytics event dispatching,
+ but we can send them with various payloads and ensure they don't
+ blow up.
+*/
+
+- (void)testEventWithCategory {
+    [_tracker sendAnalyticsEventWithCategory:nil];
+    [_tracker sendAnalyticsEventWithCategory:@""];
+    [_tracker sendAnalyticsEventWithCategory:@"Test category"];
+}
+
+- (void)testEventWithCategoryAndAction {
+    [_tracker sendAnalyticsEventWithCategory:nil action:nil];
+    [_tracker sendAnalyticsEventWithCategory:@"" action:@""];
+    [_tracker sendAnalyticsEventWithCategory:@"Test category" action:@"Test action"];
+}
+
+- (void)testEventWithCategoryActionAndLabel {
+    [_tracker sendAnalyticsEventWithCategory:nil action:nil label:nil];
+    [_tracker sendAnalyticsEventWithCategory:@"" action:@"" label:@""];
+    [_tracker sendAnalyticsEventWithCategory:@"Test category" action:@"Test action" label:@"Test Label"];
+}
+
+- (void)testEventWithCategoryActionLabelAndValue {
+    [_tracker sendAnalyticsEventWithCategory:nil action:nil label:nil value:nil];
+    [_tracker sendAnalyticsEventWithCategory:@"" action:@"" label:@"" value:@0];
+    [_tracker sendAnalyticsEventWithCategory:@"Test category" action:@"Test action" label:@"Test Label" value:@50];
 }
 
 
