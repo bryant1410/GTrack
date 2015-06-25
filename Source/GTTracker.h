@@ -54,7 +54,7 @@
 /**
  * Sets the beginning of the Google Analytics session.
  *
- * @note The GTTracker will handle session management by default, unless the handleSessionManagement property is set to NO. Sessions begin when a UIApplicationWillEnterForegroundNotification is received, and end when either a UIApplicationWillTerminateNotification or UIApplcationDidEnterBackgroundNotification is received. If you wish to handle sessions yourself, set the handleSessionManagement property to NO.
+ * @note The GTTracker will handle session management by default, unless the automaticSessionManagementEnabled property is set to NO. Sessions begin when a UIApplicationWillEnterForegroundNotification is received, and end when either a UIApplicationWillTerminateNotification or UIApplcationDidEnterBackgroundNotification is received. If you wish to handle sessions yourself, set the automaticSessionManagementEnabled property to NO.
  */
 - (void)startAnalyticsSession;
 
@@ -62,7 +62,7 @@
 /**
  * Sets the end of the Google Analytics session.
  *
- * @note The GTTracker will handle session management by default, unless the handleSessionManagement property is set to NO. Sessions begin when a UIApplicationWillEnterForegroundNotification is received, and end when either a UIApplicationWillTerminateNotification or UIApplcationDidEnterBackgroundNotification is received. If you wish to handle sessions yourself, set the handleSessionManagement property to NO.
+ * @note The GTTracker will handle session management by default, unless the automaticSessionManagementEnabled property is set to NO. Sessions begin when a UIApplicationWillEnterForegroundNotification is received, and end when either a UIApplicationWillTerminateNotification or UIApplcationDidEnterBackgroundNotification is received. If you wish to handle sessions yourself, set the automaticSessionManagementEnabled property to NO.
  */
 - (void)endAnalyticsSession;
 
