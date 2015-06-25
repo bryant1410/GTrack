@@ -31,7 +31,9 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
 }
 
 - (void)tearDown {
+    [_tracker endAnalyticsSession];
     _tracker.loggingEnabled = NO;
+    _tracker.automaticSessionManagementEnabled = YES;
     _tracker = nil;
 
     [super tearDown];
