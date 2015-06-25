@@ -23,10 +23,23 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
 
 - (void)setUp {
     [super setUp];
+
+    [GTTracker sharedInstance].loggingEnabled = YES;
 }
 
 - (void)tearDown {
     [super tearDown];
+}
+
+- (void)testStartAndEndAnalyticsSession {
+    GTTracker *tracker = [GTTracker sharedInstance];
+    [tracker startAnalyticsSession];
+
+    XCTAssertTrue(tracker.isSessionActive);
+
+    [tracker endAnalyticsSession];
+
+    XCTAssertFalse(tracker.isSessionActive);
 }
 
 - (void)testIntervalPropertiesSet {
