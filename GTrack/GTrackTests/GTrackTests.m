@@ -15,7 +15,9 @@
 
 static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXZY0123456789";
 
-@interface GTrackTests : XCTestCase
+@interface GTrackTests : XCTestCase {
+    GTTracker *_tracker;
+}
 
 @end
 
@@ -24,10 +26,14 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
 - (void)setUp {
     [super setUp];
 
-    [GTTracker sharedInstance].loggingEnabled = YES;
+    _tracker = [GTTracker sharedInstance];
+    _tracker.loggingEnabled = YES;
 }
 
 - (void)tearDown {
+    _tracker.loggingEnabled = NO;
+    _tracker = nil;
+
     [super tearDown];
 }
 
@@ -35,12 +41,14 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
 #pragma mark - GTTracker
 
 - (void)testStartAndEndAnalyticsSession {
-    GTTracker *tracker = [GTTracker sharedInstance];
-    [tracker startAnalyticsSession];
+    [_tracker startAnalyticsSession];
 
-    XCTAssertTrue(tracker.isSessionActive);
+    XCTAssertTrue(_tracker.isSessionActive);
 
-    [tracker endAnalyticsSession];
+    [_tracker endAnalyticsSession];
+
+    XCTAssertFalse(_tracker.isSessionActive);
+}
 
     XCTAssertFalse(tracker.isSessionActive);
 }
