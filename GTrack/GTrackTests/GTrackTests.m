@@ -115,6 +115,13 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
     }
 }
 
+- (void)testDebugDescription {
+    XCTAssertNotNil([GTTracker sharedInstance].debugDescription);
+    XCTAssert([GTTracker sharedInstance].debugDescription.length > 0);
+}
+
+#pragma mark - Test Utils
+
 - (NSTimeInterval)randomIntervalBetween:(NSTimeInterval)min and:(NSTimeInterval)max {
     return ((double)arc4random() / ARC4RANDOM_MAX) * (max - min) + min;
 }
