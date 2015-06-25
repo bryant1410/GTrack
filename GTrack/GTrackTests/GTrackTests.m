@@ -159,6 +159,29 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
     }
 }
 
+- (void)testEndAndSend {
+    NSString *randomCategory = [self randomStringWithLength:5];
+    NSString *randomAction = [self randomStringWithLength:5];
+    NSString *randomLabel = [self randomStringWithLength:5];
+
+    GTTimedEvent *timedEvent1 = [GTTimedEvent eventStartingNowWithCategory:randomCategory action:randomAction label:randomLabel];
+    [timedEvent1 endAndSendWithIntervalUnit:IntervalUnitHours];
+
+    randomCategory = [self randomStringWithLength:5];
+    randomAction = [self randomStringWithLength:5];
+    randomLabel = [self randomStringWithLength:5];
+
+    GTTimedEvent *timedEvent2 = [GTTimedEvent eventStartingNowWithCategory:randomCategory action:randomAction label:randomLabel];
+    [timedEvent2 endAndSendWithIntervalUnit:IntervalUnitMinutes];
+
+    randomCategory = [self randomStringWithLength:5];
+    randomAction = [self randomStringWithLength:5];
+    randomLabel = [self randomStringWithLength:5];
+
+    GTTimedEvent *timedEvent3 = [GTTimedEvent eventStartingNowWithCategory:randomCategory action:randomAction label:randomLabel];
+    [timedEvent3 endAndSendWithIntervalUnit:IntervalUnitSeconds];
+}
+
 
 #pragma mark - Test Utils
 
