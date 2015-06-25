@@ -34,8 +34,8 @@ static NSString * kAnalyticsEndSessionKey = @"end";
     }
     
     self.automaticSessionManagementEnabled = YES;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleAppActive) name:UIApplicationWillEnterForegroundNotification object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleAppActive) name:UIApplicationDidBecomeActiveNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleAppInactive) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleAppInactive) name:UIApplicationWillTerminateNotification object:nil];
     

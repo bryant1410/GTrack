@@ -52,6 +52,42 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
     XCTAssertFalse(_tracker.isSessionActive);
 }
 
+- (void)testAutomaticSessionManagement {
+    _tracker.automaticSessionManagementEnabled = YES;
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationDidBecomeActiveNotification object:nil];
+
+    XCTAssertTrue(_tracker.isSessionActive);
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationDidEnterBackgroundNotification object:nil];
+
+    XCTAssertFalse(_tracker.isSessionActive);
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationWillTerminateNotification object:nil];
+
+    XCTAssertFalse(_tracker.isSessionActive);
+}
+
+- (void)testAutomaticSessionManagementDisabled {
+    _tracker.automaticSessionManagementEnabled = NO;
+
+    [_tracker endAnalyticsSession];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationDidBecomeActiveNotification object:nil];
+
+    XCTAssertFalse(_tracker.isSessionActive);
+
+    [_tracker startAnalyticsSession];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationDidEnterBackgroundNotification object:nil];
+
+    XCTAssertTrue(_tracker.isSessionActive);
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationWillTerminateNotification object:nil];
+
+    XCTAssertTrue(_tracker.isSessionActive);
+}
+
 /*
  We can't really test the results of the analytics event dispatching,
  but we can send them with various payloads and ensure they don't
