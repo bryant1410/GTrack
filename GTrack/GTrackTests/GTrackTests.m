@@ -15,7 +15,9 @@
 
 static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXZY0123456789";
 
-@interface GTrackTests : XCTestCase
+@interface GTrackTests : XCTestCase {
+    GTTracker *_tracker;
+}
 
 @end
 
@@ -23,11 +25,107 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
 
 - (void)setUp {
     [super setUp];
+
+    _tracker = [GTTracker sharedInstance];
+    _tracker.loggingEnabled = YES;
 }
 
 - (void)tearDown {
+    [_tracker endAnalyticsSession];
+    _tracker.loggingEnabled = NO;
+    _tracker.automaticSessionManagementEnabled = YES;
+    _tracker = nil;
+
     [super tearDown];
 }
+
+
+#pragma mark - GTTracker
+
+- (void)testStartAndEndAnalyticsSession {
+    [_tracker startAnalyticsSession];
+
+    XCTAssertTrue(_tracker.isSessionActive);
+
+    [_tracker endAnalyticsSession];
+
+    XCTAssertFalse(_tracker.isSessionActive);
+}
+
+- (void)testAutomaticSessionManagement {
+    _tracker.automaticSessionManagementEnabled = YES;
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationDidBecomeActiveNotification object:nil];
+
+    XCTAssertTrue(_tracker.isSessionActive);
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationDidEnterBackgroundNotification object:nil];
+
+    XCTAssertFalse(_tracker.isSessionActive);
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationWillTerminateNotification object:nil];
+
+    XCTAssertFalse(_tracker.isSessionActive);
+}
+
+- (void)testAutomaticSessionManagementDisabled {
+    _tracker.automaticSessionManagementEnabled = NO;
+
+    [_tracker endAnalyticsSession];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationDidBecomeActiveNotification object:nil];
+
+    XCTAssertFalse(_tracker.isSessionActive);
+
+    [_tracker startAnalyticsSession];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationDidEnterBackgroundNotification object:nil];
+
+    XCTAssertTrue(_tracker.isSessionActive);
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationWillTerminateNotification object:nil];
+
+    XCTAssertTrue(_tracker.isSessionActive);
+}
+
+/*
+ We can't really test the results of the analytics event dispatching,
+ but we can send them with various payloads and ensure they don't
+ blow up.
+*/
+
+- (void)testScreenEvent {
+    [_tracker sendScreenEventWithTitle:nil];
+    [_tracker sendScreenEventWithTitle:@""];
+    [_tracker sendScreenEventWithTitle:@"Test Title"];
+}
+
+- (void)testEventWithCategory {
+    [_tracker sendAnalyticsEventWithCategory:nil];
+    [_tracker sendAnalyticsEventWithCategory:@""];
+    [_tracker sendAnalyticsEventWithCategory:@"Test category"];
+}
+
+- (void)testEventWithCategoryAndAction {
+    [_tracker sendAnalyticsEventWithCategory:nil action:nil];
+    [_tracker sendAnalyticsEventWithCategory:@"" action:@""];
+    [_tracker sendAnalyticsEventWithCategory:@"Test category" action:@"Test action"];
+}
+
+- (void)testEventWithCategoryActionAndLabel {
+    [_tracker sendAnalyticsEventWithCategory:nil action:nil label:nil];
+    [_tracker sendAnalyticsEventWithCategory:@"" action:@"" label:@""];
+    [_tracker sendAnalyticsEventWithCategory:@"Test category" action:@"Test action" label:@"Test Label"];
+}
+
+- (void)testEventWithCategoryActionLabelAndValue {
+    [_tracker sendAnalyticsEventWithCategory:nil action:nil label:nil value:nil];
+    [_tracker sendAnalyticsEventWithCategory:@"" action:@"" label:@"" value:@0];
+    [_tracker sendAnalyticsEventWithCategory:@"Test category" action:@"Test action" label:@"Test Label" value:@50];
+}
+
+
+#pragma mark - GTInterval
 
 - (void)testIntervalPropertiesSet {
     for (NSInteger i = 0; i < TEST_ITERATIONS; i++) {
@@ -84,6 +182,15 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
     }
 }
 
+- (void)testIntervalDebugDescription {
+    GTInterval *interval = [GTInterval new];
+
+    XCTAssertNotNil([interval debugDescription]);
+}
+
+
+#pragma mark - GTTimedEvent
+
 - (void)testTimedEvents {
     for (NSInteger i = 0; i < TEST_ITERATIONS; i++) {
         NSString *randomCategory = [self randomStringWithLength:5];
@@ -101,6 +208,38 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
         XCTAssertGreaterThan(timedEvent.eventInterval.timeInterval, kAnalyticsDefaultTimeInterval);
     }
 }
+
+- (void)testEndAndSend {
+    NSString *randomCategory = [self randomStringWithLength:5];
+    NSString *randomAction = [self randomStringWithLength:5];
+    NSString *randomLabel = [self randomStringWithLength:5];
+
+    GTTimedEvent *timedEvent1 = [GTTimedEvent eventStartingNowWithCategory:randomCategory action:randomAction label:randomLabel];
+    [timedEvent1 endAndSendWithIntervalUnit:IntervalUnitHours];
+
+    randomCategory = [self randomStringWithLength:5];
+    randomAction = [self randomStringWithLength:5];
+    randomLabel = [self randomStringWithLength:5];
+
+    GTTimedEvent *timedEvent2 = [GTTimedEvent eventStartingNowWithCategory:randomCategory action:randomAction label:randomLabel];
+    [timedEvent2 endAndSendWithIntervalUnit:IntervalUnitMinutes];
+
+    randomCategory = [self randomStringWithLength:5];
+    randomAction = [self randomStringWithLength:5];
+    randomLabel = [self randomStringWithLength:5];
+
+    GTTimedEvent *timedEvent3 = [GTTimedEvent eventStartingNowWithCategory:randomCategory action:randomAction label:randomLabel];
+    [timedEvent3 endAndSendWithIntervalUnit:IntervalUnitSeconds];
+}
+
+- (void)testTimedEventDebugDescription {
+    GTTimedEvent *timedEvent = [GTTimedEvent new];
+
+    XCTAssertNotNil([timedEvent debugDescription]);
+}
+
+
+#pragma mark - Test Utils
 
 - (NSTimeInterval)randomIntervalBetween:(NSTimeInterval)min and:(NSTimeInterval)max {
     return ((double)arc4random() / ARC4RANDOM_MAX) * (max - min) + min;

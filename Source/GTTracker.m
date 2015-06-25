@@ -28,22 +28,14 @@ static NSString * kAnalyticsEndSessionKey = @"end";
 
 - (instancetype)init {
     self = [super init];
-    
-    if (!self) {
-        return nil;
-    }
-    
+
     self.automaticSessionManagementEnabled = YES;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startAnalyticsSession) name:UIApplicationWillEnterForegroundNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endAnalyticsSession) name:UIApplicationDidEnterBackgroundNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endAnalyticsSession) name:UIApplicationWillTerminateNotification object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleAppActive) name:UIApplicationDidBecomeActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleAppInactive) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleAppInactive) name:UIApplicationWillTerminateNotification object:nil];
     
     return self;
-}
-
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 
@@ -59,11 +51,25 @@ static NSString * kAnalyticsEndSessionKey = @"end";
 
 #pragma mark - Session management
 
-- (void)startAnalyticsSession {
-    if (!self.automaticSessionManagementEnabled) {
-        return;
+- (void)handleAppActive {
+    // If the app has become active and automatic session management is enabled,
+    // let's start the session.
+    //
+    if (self.automaticSessionManagementEnabled) {
+        [self startAnalyticsSession];
     }
-    
+}
+
+- (void)handleAppInactive {
+    // If the app has become inactive and automatic session management is enabled,
+    // let's end the session.
+    //
+    if (self.automaticSessionManagementEnabled) {
+        [self endAnalyticsSession];
+    }
+}
+
+- (void)startAnalyticsSession {
     if (self.loggingEnabled) {
         NSLog(@"[GTrack] Starting analytics session.");
     }
@@ -75,10 +81,6 @@ static NSString * kAnalyticsEndSessionKey = @"end";
 }
 
 - (void)endAnalyticsSession {
-    if (!self.automaticSessionManagementEnabled) {
-        return;
-    }
-    
     if (self.loggingEnabled) {
         NSLog(@"[GTrack] Ending analytics session.");
     }
@@ -140,10 +142,6 @@ static NSString * kAnalyticsEndSessionKey = @"end";
 
 - (instancetype)initWithCategory:(NSString *)category action:(NSString *)action label:(NSString *)label {
     self = [super init];
-    
-    if (!self) {
-        return nil;
-    }
     
     self.category = category;
     self.action = action;
