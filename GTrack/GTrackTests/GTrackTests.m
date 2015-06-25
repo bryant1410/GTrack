@@ -182,6 +182,12 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
     }
 }
 
+- (void)testIntervalDebugDescription {
+    GTInterval *interval = [GTInterval new];
+
+    XCTAssertNotNil([interval debugDescription]);
+}
+
 
 #pragma mark - GTTimedEvent
 
@@ -224,6 +230,12 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
 
     GTTimedEvent *timedEvent3 = [GTTimedEvent eventStartingNowWithCategory:randomCategory action:randomAction label:randomLabel];
     [timedEvent3 endAndSendWithIntervalUnit:IntervalUnitSeconds];
+}
+
+- (void)testTimedEventDebugDescription {
+    GTTimedEvent *timedEvent = [GTTimedEvent new];
+
+    XCTAssertNotNil([timedEvent debugDescription]);
 }
 
 
