@@ -115,10 +115,6 @@ static NSString * const ALPHABET = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQ
     }
 }
 
-- (void)testDebugDescription {
-    XCTAssertNotNil([GTTracker sharedInstance].debugDescription);
-    XCTAssert([GTTracker sharedInstance].debugDescription.length > 0);
-}
 
 #pragma mark - Test Utils
 
