@@ -36,7 +36,7 @@ GTTracker *tracker = [GTTracker sharedInstance];
 
 #2. Session Management
 
-GTrack handles Google Analytics session management automatically. By default, sessions begin when GTrack receives a `UIApplicationWillEnterForegroundNotification`, and ends when it receives either a `UIApplcationDidEnterBackgroundNotification` or `UIApplicationWillTerminateNotification` notification.
+GTrack handles Google Analytics session management automatically. By default, sessions begin when GTrack receives a `name:UIApplicationDidBecomeActiveNotification`, and ends when it receives either a `UIApplcationDidEnterBackgroundNotification` or `UIApplicationWillTerminateNotification` notification.
 
 To customize when sessions begin and end, you can disable automatic session management as follows:
 
