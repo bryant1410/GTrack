@@ -5,14 +5,14 @@
 
 GTrack is a lightweight Objective-C wrapper around the Google Analytics for iOS v3 SDK with some extra goodies, brought to you by [Gemr](https://gemr.com/?utm_source=github&utm_medium=open_source&utm_campaign=gtrack). It's built with simplicity and ease-of-use in mind, and adds some additional features not directly available through Google's SDK.
 
-#Features
+# Features
 
 - **Automatic session management**
 - **Screen view tracking**
 - **Event Tracking**
 - **Timed Events** - Easily track the duration of important events like filling out forms or network requests, to see where users are being bottlenecked in your app.
 
-#Installation
+# Installation
 
 
 GTrack assumes you've set up your own Google Analytics Account. If you haven't already, visit [Google Analytics]
@@ -22,10 +22,10 @@ GTrack is available via [CocoaPods](http://cocoapods.org/?q=GTrack) Add the foll
 
 `pod 'GTrack'`
 
-#Usage
+# Usage
 
 
-#1. Setup
+# 1. Setup
 
 Import `<GTTracker.h>` in your `AppDelegate.m` file, and in `application:didFinishLaunchingWithOptions:` initialize the `GTTracker` singleton with your Google Analytics Tracking ID and your `GAILogLevel`.
 
@@ -34,7 +34,7 @@ GTTracker *tracker = [GTTracker sharedInstance];
 [tracker initializeAnalyticsWithTrackingID:YOUR_TRACKING_ID logLevel:kGAILogLevelInfo];
 ```
 
-#2. Session Management
+# 2. Session Management
 
 GTrack handles Google Analytics session management automatically. By default, sessions begin when GTrack receives a `name:UIApplicationDidBecomeActiveNotification`, and ends when it receives either a `UIApplcationDidEnterBackgroundNotification` or `UIApplicationWillTerminateNotification` notification.
 
@@ -52,7 +52,7 @@ Then, whenever you want sessions to begin and end, you can call the following me
 ```
 
 
-#3. Logging
+# 3. Logging
 
 By default, `GTTracker` logging is disabled, but you can optionally enable logging for debugging purposes. It isn't recommended that you leave logging enabled for your production apps.
 
@@ -60,7 +60,7 @@ By default, `GTTracker` logging is disabled, but you can optionally enable loggi
 [tracker setLoggingEnabled:YES];
 ```
 
-#4. Manual Screen Tracking
+# 4. Manual Screen Tracking
 
 If you opt to use manual screen tracking over automatic screen tracking, to avoid having to require every view controller you want to track extend `GAITrackedViewController`, you can tell the GTTracker singleton to send a screen event with a defined title as follows:
 
@@ -72,7 +72,7 @@ If you opt to use manual screen tracking over automatic screen tracking, to avoi
 }
 ```
 
-#5. Sending Events
+# 5. Sending Events
 
 To track Google Analytics events through GTrack, all you need to do is pass whatever combination of `category`, `action`, `label`, and `value` parameters you desire to the GTTracker singleton. The `category`, `action`, and `label` params are `NSString`'s, and the `value` param is an `NSNumber`. 
 
@@ -93,7 +93,7 @@ For example, you might provide multiple ways to login to your app, and may be cu
 
 Breaking up related events, as shown above, in a similar hierarchy means more insightful reports at the end of your cycle. All events related to "Log In" are encapsulated in the same category and thus can be filtered accordingly to retrieve interesting metrics based specifically on those categories. Subsequently, the "Log In" category is further broken into two main actions, "Social" and "Normal", so when filtered you're able to see what percentage of your users are signing in with email vs. Facebook/Google, and what percentage of users that used social login signed up with Facebook vs. Google. This can give you valuable data about how your users interact with your application and about popular or unused features you may want to focus on or remove entirely.
 
-#6. Timing An Event
+# 6. Timing An Event
 
 From a user-experience standpoint, it can extremely valuable to know how long certain activities take in the real-world. GTrack allows you to create *timed events* that start when you create them, and end when you tell them to, automatically sending the event off to Google along with your define event parameters with the duration of the event as the `value` of the event.
 
@@ -124,7 +124,7 @@ As these events are delivered to Google over time from all your users, you'll be
 ***NOTE:*** It appears that the `value` parameter is not visible using Google's *Real-Time Events* dashboard, but will be available when viewing previous days reports in *Behavior* -> *Events*.
 
 
-#7. Timing Multiple Related Events
+# 7. Timing Multiple Related Events
 
 Expanding on the above example regarding users filling out an initial sign up form, you might suspect you have some user drop-off during the process. In this case, both events, a successful signup, and a cancelled signup, are related in that they both start at the same time, but end at different times. You can track the durations of both of these events using a shared `GTInterval` object, and when one or the other even completes, you can use that object to get the duration, and send the events normally:
 
@@ -158,13 +158,13 @@ Expanding on the above example regarding users filling out an initial sign up fo
 ---
 [<img src="Screenshots/gemr_logo.png">](https://gemr.com/?utm_source=github&utm_medium=open_source&utm_campaign=gtrack)
 
-###Gemr is a social community for collectors where you can discover, share, buy, sell, trade, and show-off your collectibles and other unique items. We want to connect you with like-minded people who share your passions.
+### Gemr is a social community for collectors where you can discover, share, buy, sell, trade, and show-off your collectibles and other unique items. We want to connect you with like-minded people who share your passions.
 
 
 
 
 
-#License
+# License
 
 This project is made available under the MIT license. See LICENSE.txt for details.
 
